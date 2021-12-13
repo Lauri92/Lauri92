@@ -8,8 +8,12 @@ a {
 }
 
 body {
-    margin: 0;
+    /*margin: 0;*/
+    margin-top: -1100px;
+    margin-bottom: -1100px;
     padding: 0;
+    transform: scale(0.75);
+    /*transform-origin: 0 0;*/
 }
 
 .navbar {
@@ -88,6 +92,7 @@ main {
 }
 
 .about-me {
+    font-size: 27px;
     font-family: 'Roboto', sans-serif;
     margin-top: 50px;
 }
@@ -305,6 +310,10 @@ svg {
 
 
 @media only screen and (max-width: 1150px) {
+
+    body {
+        margin-top: -900px;
+    }
 
     .navbar {
         margin-top: -16px;
