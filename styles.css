@@ -132,6 +132,7 @@ main {
 }
 
 .project-div {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -502,7 +503,7 @@ svg {
 
     .projects-container {
         width: 350px;
-        margin-left: 150px;
+        margin-left: 100px;
     }
 
     .footer-farewell-message-p {
