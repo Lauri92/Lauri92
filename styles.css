@@ -54,6 +54,7 @@ a:active {
 /**NAV**/
 nav {
     background-color: var(--bg-c);
+    font-family: 'Roboto', sans-serif;
     position: fixed;
     width: 100%;
     padding: 0.80em;
