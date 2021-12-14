@@ -4,223 +4,236 @@
     <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio Lauri Riikonen</title>
 </head>
+
 <body>
-<!--
+<!--NAVBAR-->
 <nav class="navbar">
-    <ul class="navbar-nav">
-        <li class="nav-item">About</li>
-        <li class="nav-item" id="register-button">Work</li>
-        <li class="nav-item" id="login-button">Contact</li>
-    </ul>
+    <input type="checkbox" id="menu">
+    <header class="nav-head">
+        <label for="menu" onclick id="toggle-menu">
+            <img src="menu.png" alt="" id="drp-menu">
+        </label>
+    </header>
+    <div id="navlist">
+        <ul class="nav-list">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Work</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
 </nav>
--->
+<!--END OF NAVBAR-->
+
 <main>
-    <div class="general-info-container">
-        <div class="general-info">
-            <div class="background-name">
-                <p class="programmer-name">LAURI</p>
-                <div class="info-container">
-                    <p class="greeting-p">Hi, I'm Lauri Riikonen</p>
-                    <p class="tech-p">A BACK-END AND ANDROID</p>
-                    <p class="developer-p">DEVELOPER</p>
-                    <p class="about-me">Hello! I'm a passionate Mobile/Back-end developer, I am a third year student in
-                        Metropolia University of Applied Sciences majoring in Mobile solutions. My strength is in
-                        Android
-                        development using Kotlin and my other strength is in back-end development using Node.js.</p>
-                    <p class="about-me"> I have also gathered knowledge in various other technologies in the mobile
-                        development area such as iOS and React Native, in addition to that I have learned basics about
-                        SQL and NoSQL databases, CI/CD pipelines, Agile software development, Microsoft Azure and UI/UX
-                        design.</p>
-                    <p class="about-me">Projects listed below are projects that I have created in school
-                        or with my own time, they are listed starting from the projects that most display my current
-                        skill level. The description in the portfolio contains quick description about the project,
-                        check out the repositories in GitHub for more information.</p>
-                    <!--
-                    <div class="resume-div">
-                        <button class="resume-button">View my resume</button>
-                    </div>-->
-                </div>
+
+    <!--ABOUT ME-->
+    <div class="general-info-container" id= "about">
+        <div class="background-name">
+            <p class="greeting-p">Hi, I'm Lauri Riikonen</p>
+            <p class="programmer-name">LAURI</p>
+            <div class="info-container">
+                <p class="tech-p">A BACK-END AND ANDROID DEVELOPER</p>
+                <p class="about-me"> I am a third-year student at Metropolia University of Applied Sciences majoring in Mobile solutions.
+                    Since I began coding and creating projects, I started to develop a passion for android and back-end development.
+                </p>
+                <p class="about-me"> I have learned various technologies in the field of mobile
+                    development such as <span class= "techs">IOS</span> and <span class= "techs">React Native</span>, and also
+                    learned some basics of <span class= "techs">SQL</span>, <span class= "techs">NoSQL databases</span>,
+                    <span class= "techs">CI/CD pipelines</span>,
+                    <span class= "techs">Agile software development</span>, <span class= "techs">Microsoft Azure</span>, and
+                    <span class= "techs">UI/UX design</span>. My core skills are <span class= "techs">Kotlin</span> for android and
+                    <span class= "techs">Node.js</span>
+                    for back-end development.</p>
+                <p class="about-me"> Check out both my school and personal projects down below. </p>
+                <!--
+                <div class="resume-div">
+                    <button class="resume-button">View my resume</button>
+                </div>-->
             </div>
         </div>
     </div>
-    <hr>
-    <h1 class="projects-label">Projects</h1>
+    <hr class= "line-break">
+    <span class ="programmer-name-last">URI</span>
 
-    <div class="projects-container">
 
-        <div class="project-div">
-            <div class="project-background-div"></div>
-            <img class="project-img"
-                 src="ARea-explorer-full2.png"
-                 alt="image of a project">
-            <div class="project-info-div">
-                <p class="app-label">ARea Explorer</p>
-                <p class="app-description">This a school project done for a real customer with requirements for the
-                    application. The requirements are as follows: Build an AR application which allows showing various
-                    different types of dashboards and AR map. The project itself consists of Web and Android frontends,
-                    in addition to backend server hosted in Azure. My participation is in backend and Android side of
-                    things. Done in collaboration with <a style="font-size: 20px" href="https://github.com/TuomasB73">Tuomas
-                        Bergholm,</a> <a style="font-size: 20px" href="https://github.com/Rikotee">Teemu Rekola</a> and
-                    <a
-                            style="font-size: 20px" href="https://github.com/arnaud18o5">Arnaud Avocat Gros</a></p>
-                <a class="app-source-code" href="https://github.com/Lauri92/arvr-backend">Source code</a>
-                <div class="project-live-button-logo-div">
-                    <button style="visibility: hidden" class="project-live-button">Project Live</button>
-                    <div class="logos">
-                        <img class="android-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
-                             alt="android logo">
-                        <img class="kotlin-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png"
-                             alt="kotlin logo">
-                        <img class="node-js-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
-                             alt="node js logo">
-                        <img class="mongodb-logo"
-                             src="https://www.pngkey.com/png/full/32-327123_mongodb-logo-white-png.png"
-                             alt="mongodb js logo">
+
+
+    <!--PROJECTS-->
+
+    <div class= "projects" id="projects">
+        <h1 class="projects-label">Projects</h1>
+
+        <div class="projects-container">
+            <div class="project-div">
+                <div class="project-background-div">
+                    <img class="project-img"
+                         src="ARea-explorer-full2.png"
+                         alt="image of a project">
+                </div>
+                <div class="project-info-div">
+                    <p class="app-label">ARea Explorer</p>
+                    <p class="app-description">This school project's requirement is to
+                        build an AR app that allows displaying various types of dashboards and AR map.
+                        The project consists of Web and Android frontends, in addition to backend server hosted in Azure.
+                        My participation was mainly in backend and Android side.
+                        Done in collaboration with <a  href="https://github.com/TuomasB73" style = "color: white;">Tuomas
+                            Bergholm,</a> <a href="https://github.com/Rikotee" style = "color: white;">Teemu Rekola</a> and
+                        <a href="https://github.com/arnaud18o5" style = "color: white;">Arnaud Avocat Gros</a>.</p>
+                    <button style="display: none" class="project-live-button">Project Live</button>
+                    <div class="project-live-button-logo-div">
+                        <a class="app-source-code" href="https://github.com/Lauri92/arvr-backend">Source code</a>
+                        <div class="logos">
+                            <img class="android-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
+                                 alt="android logo">
+                            <img class="kotlin-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png"
+                                 alt="kotlin logo">
+                            <img class="node-js-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
+                                 alt="node js logo">
+                            <img class="mongodb-logo"
+                                 src="https://www.pngkey.com/png/full/32-327123_mongodb-logo-white-png.png"
+                                 alt="mongodb js logo">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project-div">
-            <div class="project-background-div"></div>
-            <img class="project-img"
-                 src="symmetrical-spoon-full.png"
-                 alt="image of a project">
-            <div class="project-info-div">
-                <p class="app-label">Symmetrical Spoon</p>
-                <p class="app-description">This is an application which was built for course "Sensorbased Mobile
-                    Applications", it includes multiple different kind of fundamentals of Android programming in a
-                    simple app. Technologies used in this application contain techologies such as: MVVM desing pattern,
-                    Livedata, DataBinding, Room Database, Retrofit, Coroutines, Graphs, Step counter sensor, maps and
-                    Augmented Reality. Done in collaboration with <a style="font-size: 20px"
-                                                                     href="https://github.com/mingg1">Minji
-                        Choi</a>.</p>
-                <a class="app-source-code" href="https://github.com/Lauri92/symmetrical-spoon">Source code</a>
-                <div class="project-live-button-logo-div">
-                    <button style="visibility: hidden" class="project-live-button">Project Live</button>
-                    <div class="logos">
-                        <img class="android-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
-                             alt="android logo">
-                        <img class="kotlin-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png"
-                             alt="kotlin logo">
+            <div class="project-div">
+                <div class="project-background-div">
+                    <img class="project-img"
+                         src="symmetrical-spoon-full.png"
+                         alt="image of a project">
+                </div>
+                <div class="project-info-div">
+                    <p class="app-label">Symmetrical Spoon</p>
+                    <p class="app-description">This application was built for the course "Sensorbased Mobile
+                        Applications", that includes multiple kinds of Android programming fundamentals. Technologies used are MVVM desing pattern,
+                        Livedata, DataBinding, Room Database, Retrofit, Coroutines, Graphs, Step counter sensor, maps and
+                        Augmented Reality. Done in collaboration with
+                        <a href="https://github.com/mingg1" style= "color: white;">MinjiChoi</a>.</p>
+                    <button style="display: none" class="project-live-button">Project Live</button>
+                    <div class="project-live-button-logo-div">
+                        <a class="app-source-code" href="https://github.com/Lauri92/symmetrical-spoon">Source code</a>
+                        <div class="logos">
+                            <img class="android-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
+                                 alt="android logo">
+                            <img class="kotlin-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png"
+                                 alt="kotlin logo">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project-div">
-            <div class="project-background-div"></div>
-            <img class="project-img" src="helsinkiapp-combined.png" alt="image of a project">
-            <div class="project-info-div">
-                <p class="app-label">Helsinki Sighting</p>
-                <p class="app-description">This application was made for the sole purpose of gaining more confidence and
-                    strengthening fundamentals about Android programming. Areas of focus contain items like
-                    recyclerview, working with retrofit and fetching data from external API and mapping it into a more
-                    complex datamodels and maps with navigation and some other interactions.</p>
-                <a class="app-source-code" href="https://github.com/Lauri92/Helsinki-Sighting">Source code</a>
-                <div class="project-live-button-logo-div">
-                    <button style="visibility: hidden" class="project-live-button">Project Live</button>
-                    <div class="logos">
-                        <img class="android-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
-                             alt="android logo">
-                        <img class="kotlin-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png"
-                             alt="kotlin logo">
+            <div class="project-div">
+                <div class="project-background-div">
+                    <img class="project-img" src="helsinkiapp-combined.png" alt="image of a project">
+                </div>
+                <div class="project-info-div">
+                    <p class="app-label">Helsinki Sighting</p>
+                    <p class="app-description">This application was made for the sole purpose of gaining more confidence and
+                        strengthening fundamentals of Android programming. Areas of focus contain items like
+                        recyclerview, working with retrofit and fetching data from external API and mapping it into a more
+                        complex datamodels and maps with navigation and some other interactions.</p>
+                    <button style="display: none" class="project-live-button">Project Live</button>
+                    <div class="project-live-button-logo-div">
+                        <a class="app-source-code" href="https://github.com/Lauri92/Helsinki-Sighting">Source code</a>
+                        <div class="logos">
+                            <img class="android-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
+                                 alt="android logo">
+                            <img class="kotlin-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png"
+                                 alt="kotlin logo">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project-div">
-            <div class="project-background-div"></div>
-            <img class="project-img" src="mediacollection.png" alt="image of a project">
-            <div class="project-info-div">
-                <p class="app-label">Media Collection</p>
-                <p class="app-description">This is a Social media app, sort of Instagram copy, which focuses on web
-                    development basics, main
-                    focus is in back-end and the frontend is written in vanilla Javascript. Idea of the application is
-                    to allow users to upload images and videos, then they are searchable, viewable, commentable and
-                    likeable by other
-                    users. The app also has small integration with AWS in the form of S3 storage where the media items
-                    are uploaded to.</p>
-                <a class="app-source-code" href="https://github.com/Lauri92/Media_collection">Source code</a>
-                <div class="project-live-button-logo-div">
-                    <button style="visibility: hidden" class="project-live-button">Project Live</button>
-                    <div class="logos">
-                        <img class="html-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
-                             alt="html logo">
-                        <img class="css-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
-                             alt="css logo">
-                        <img class="js-logo"
-                             src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png"
-                             alt="js logo">
-                        <img class="node-js-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
-                             alt="node js logo">
-                        <img class="mariadb-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mariadb-seal-browntext.svg/1280px-Mariadb-seal-browntext.svg.png"
-                             alt="mariadb logo">
+            <div class="project-div">
+                <div class="project-background-div">
+                    <img class="project-img" src="mediacollection.png" alt="image of a project">
+                </div>
+                <div class="project-info-div">
+                    <p class="app-label">Media Collection</p>
+                    <p class="app-description">This is a Social media app, sort of an Instagram copy, which focuses on web
+                        development basics, written in vanilla Javascript with AWS integration. The idea of
+                        the app is to allow users to upload images and videos that are searchable, viewable, commentable and
+                        likeable by other users.</p>
+                    <button style="display: none" class="project-live-button">Project Live</button>
+                    <div class="project-live-button-logo-div">
+                        <a class="app-source-code" href="https://github.com/Lauri92/Media_collection">Source code</a>
+                        <div class="logos">
+                            <img class="html-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+                                 alt="html logo">
+                            <img class="css-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                                 alt="css logo">
+                            <img class="js-logo"
+                                 src="https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png"
+                                 alt="js logo">
+                            <img class="node-js-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
+                                 alt="node js logo">
+                            <img class="mariadb-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mariadb-seal-browntext.svg/1280px-Mariadb-seal-browntext.svg.png"
+                                 alt="mariadb logo">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project-div">
-            <div class="project-background-div"></div>
-            <img class="project-img" src="languageappfull.png" alt="image of a project">
-            <div class="project-info-div">
-                <p class="app-label">Language app</p>
-                <p class="app-description">As first introduction to Kotlin in Android this application was merely a
-                    scratch to Android development, it has several of the Android fundamentals implemented in it such as
-                    LiveData, Databinding and MVVM Design pattern.</p>
-                <a class="app-source-code" href="https://github.com/Lauri92/kotlin_guess_the_word">Source code</a>
-                <div class="project-live-button-logo-div">
-                    <button style="visibility: hidden" class="project-live-button">Project Live</button>
-                    <div class="logos">
-                        <img class="android-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
-                             alt="android logo">
-                        <img class="kotlin-logo"
-                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png"
-                             alt="kotlin logo">
+            <div class="project-div">
+                <div class="project-background-div">
+                    <img class="project-img" src="languageappfull.png" alt="image of a project">
+                </div>
+                <div class="project-info-div">
+                    <p class="app-label">Language app</p>
+                    <p class="app-description">As first introduction to Kotlin for Android, this application was merely a
+                        scratch to Android development but still has several applications of the Android fundamentals implemented through
+                        LiveData, Databinding and MVVM Design pattern.</p>
+                    <button style="display: none" class="project-live-button">Project Live</button>
+                    <div class="project-live-button-logo-div">
+                        <a class="app-source-code" href="https://github.com/Lauri92/kotlin_guess_the_word">Source code</a>
+                        <div class="logos">
+                            <img class="android-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
+                                 alt="android logo">
+                            <img class="kotlin-logo"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kotlin_Icon.svg/2048px-Kotlin_Icon.svg.png"
+                                 alt="kotlin logo">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project-div">
-            <div class="project-background-div"></div>
-            <img class="project-img" src="https://placekitten.com/g/700/500" alt="image of a project">
-            <div class="project-info-div">
-                <p class="app-label">Buy and sell app</p>
-                <p class="app-description">This app was made in the introduction course to React Native, the
-                    basic idea of the application was to post items which are then searchable by other users. The posted
-                    items were then displayed and had item information and item seller information in them such as email
-                    and phone number which the other users could use to contact the person selling.
-                    Unfortunately the backend school provided for this application has been removed, therefore
-                    this application won't work.</p>
-                <a class="app-source-code" href="https://github.com/Lauri92/fictional-octo-umbrella">Source code</a>
-                <div class="project-live-button-logo-div">
-                    <button style="visibility: hidden" class="project-live-button">Project Live</button>
-                    <div class="logos">
-                        <img class="react-native-logo"
-                             src="https://developers.pendo.io/wp-content/uploads/2020/11/react-native.png"
-                             alt="react-native logo">
+            <div class="project-div">
+                <div class="project-background-div">
+                    <img class="project-img" src="https://placekitten.com/g/700/500" alt="image of a project">
+                </div>
+                <div class="project-info-div">
+                    <p class="app-label">Buy and sell app</p>
+                    <p class="app-description"> The basic idea of this application was to post items that are searchable by other users. The posted
+                        items were then displayed with item details such as seller's contact information.
+                        Unfortunately the backend school provided for this application had been removed, therefore
+                        this application is no longer active.</p>
+                    <button style="display: none" class="project-live-button">Project Live</button>
+                    <div class="project-live-button-logo-div">
+                        <a class="app-source-code" href="https://github.com/Lauri92/fictional-octo-umbrella">Source code</a>
+                        <div class="logos">
+                            <img class="react-native-logo"
+                                 src="https://developers.pendo.io/wp-content/uploads/2020/11/react-native.png"
+                                 alt="react-native logo">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,7 +241,9 @@
     </div>
 </main>
 
-<footer>
+
+<!--CONTACT-->
+<footer id="contact">
     <div>
         <p class="footer-farewell-message-p">Let's get in touch</p>
         <p class="footer-email-p">lauri.riikonen@metropolia.fi</p>
@@ -245,7 +260,7 @@
                               d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
                               class=""></path>
                     </svg>
-                    <a style="color: black" href="https://github.com/Lauri92">
+                    <a href="https://github.com/Lauri92" class="github-linkedin-contact-links">
                         GitHub</a>
                 </p>
                 <p class="linkedin">
@@ -256,7 +271,7 @@
                               d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
                               class=""></path>
                     </svg>
-                    <a style="color: black" href="https://www.linkedin.com/in/lauri-riikonen-a1871b205/">
+                    <a  href="https://www.linkedin.com/in/lauri-riikonen-a1871b205/" class="github-linkedin-contact-links">
                         LinkedIn</a>
                 </p>
             </div>
