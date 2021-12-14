@@ -140,6 +140,26 @@ main, footer {
     position: relative;
     z-index: -1;
     margin-top: -0.42em;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.programmer-name-last {
+    color: #f2f2f2;
+    font-size: 230px;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 0.2em;
+    font-family: var(--ff-f-b);
+    font-weight: 700;
+    margin-top: -4rem;
+    position: relative;
+    z-index: -1;
+
+
 
 }
 
@@ -165,17 +185,6 @@ main, footer {
     font-size: 15px;
 }
 
-.programmer-name-last {
-    color: #f2f2f2;
-    font-size: 230px;
-    font-family: var(--ff-f-b);
-    font-weight: 700;
-    position: absolute;
-    z-index: -1;
-    margin-top: -4rem;
-    margin-left: 0.3em;
-
-}
 
 .line-break {
     display: none;
@@ -192,7 +201,7 @@ main, footer {
 
 .projects {
     position: relative;
-    margin-top: 17rem;
+    margin-top: 5rem;
 }
 
 .projects-label {
@@ -210,11 +219,13 @@ main, footer {
 .android-logo, .kotlin-logo,
 .node-js-logo, .mongodb-logo,
 .html-logo, .css-logo,
-.mariadb-logo, .js-logo {
+.js-logo,  .mariadb-logo {
     width: auto;
     height: clamp(1.25rem, 4vw, 2.5rem);
     padding-left: clamp(0.5em, 3vw, 2em);
 }
+
+
 
 .react-native-logo {
     width: auto;
@@ -267,6 +278,7 @@ main, footer {
 
 .app-source-code {
     color: white;
+    font-size: 14px;
 }
 
 
@@ -324,7 +336,7 @@ svg {
 }
 
 
-/**END OF CONTAC**/
+/**END OF CONTACT**/
 
 
 
@@ -335,6 +347,7 @@ svg {
 
 
 @media (min-width: 400px) {  /** measurement is absolute px, so items won't move**/
+
 
     /**PROJECTS**/
 
@@ -365,6 +378,8 @@ svg {
         height: 40px;
         padding-left: 5px;
     }
+
+
 
     /**END OF PROJECTS**/
 
@@ -431,6 +446,10 @@ svg {
     #projects {
         margin-top: 3em;
 
+    }
+
+    .app-source-code {
+        font-size: 16px;
     }
 
     /**END OF WORK**/
