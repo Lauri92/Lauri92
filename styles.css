@@ -1,8 +1,6 @@
-@import
-url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-@import
-url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
 
 
 /**MOBILE FIRST**/
@@ -47,8 +45,6 @@ a:active {
     color: white;
     text-decoration: underline;
 }
-
-
 
 
 /**NAV**/
@@ -98,9 +94,9 @@ label img {
     display: none;
 }
 
-#menu:checked~#navlist {
+#menu:checked ~ #navlist {
     display: grid;
-    place-items:  center;
+    place-items: center;
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -111,15 +107,12 @@ label img {
 /**END-OF-NAV**/
 
 
-
-
 main, footer {
     padding: var(--pad);
 }
 
 
 /**ABOUT ME**/
-
 
 
 .general-info-container {
@@ -161,7 +154,6 @@ main, footer {
     z-index: -1;
 
 
-
 }
 
 .info-container {
@@ -195,9 +187,6 @@ main, footer {
 /**END OF ABOUT ME**/
 
 
-
-
-
 /**WORK**/
 
 .projects {
@@ -220,12 +209,11 @@ main, footer {
 .android-logo, .kotlin-logo,
 .node-js-logo, .mongodb-logo,
 .html-logo, .css-logo,
-.js-logo,  .mariadb-logo {
+.js-logo, .mariadb-logo, .graphql-logo, .compose-logo, .websocket-logo {
     width: auto;
     height: clamp(1.25rem, 4vw, 2.5rem);
     padding-left: clamp(0.5em, 3vw, 2em);
 }
-
 
 
 .react-native-logo {
@@ -241,7 +229,7 @@ main, footer {
 
 
 .project-background-div {
-    background-color:  #f2f2f2;
+    background-color: #f2f2f2;
     padding: 0.75em 0.75em;
     position: relative;
 }
@@ -258,7 +246,7 @@ main, footer {
     box-shadow: 5px 10px 20px -5px rgba(50, 52, 53, 0.9);
 }
 
-.project-live-button-logo-div{
+.project-live-button-logo-div {
     display: flex;
     justify-content: space-between;
 
@@ -283,11 +271,7 @@ main, footer {
 }
 
 
-
 /**END OF WORK**/
-
-
-
 
 
 /**CONTACT**/
@@ -340,18 +324,12 @@ svg {
 /**END OF CONTACT**/
 
 
-
-
-
-
 /**MEDIA QUERIES FOR LARGER SCREEN SIZE**/
 
 
-@media (min-width: 400px) {  /** measurement is absolute px, so items won't move**/
-
-
+@media (min-width: 400px) {
+    /** measurement is absolute px, so items won't move**/
     /**PROJECTS**/
-
     .projects-container {
         display: grid;
         justify-items: center;
@@ -368,7 +346,7 @@ svg {
     .android-logo, .kotlin-logo,
     .node-js-logo, .mongodb-logo,
     .html-logo, .css-logo,
-    .mariadb-logo, .js-logo {
+    .mariadb-logo, .js-logo, .graphql-logo, .compose-logo, .websocket-logo {
         width: auto;
         height: 27px;
         padding-left: 5px;
@@ -379,7 +357,6 @@ svg {
         height: 40px;
         padding-left: 5px;
     }
-
 
 
     /**END OF PROJECTS**/
@@ -406,22 +383,17 @@ svg {
 
     }
 
-    .nav-list{
+    .nav-list {
         display: flex;
         flex-direction: row;
         gap: 3rem;
         text-align: right;
-        align-items:  center;
+        align-items: center;
         margin-right: 4rem;
     }
 
     /**END OFNAV**/
-
-
-
-
     /**ABOUT ME**/
-
     .tech-p {
         margin-top: -9.25rem;
         font-size: 2.25rem;
@@ -439,11 +411,7 @@ svg {
     }
 
     /**END OF ABOUT ME**/
-
-
     /**WORK**/
-
-
     #projects {
         margin-top: 3em;
 
@@ -465,7 +433,6 @@ svg {
 
 
     /**ABOUT ME**/
-
     .tech-p {
         max-width: 60%;
     }
@@ -482,12 +449,9 @@ svg {
 
 
     /**WORK**/
-
-
     .project-img {
         height: 250px;
     }
-
 
 
     .projects-container {
@@ -518,12 +482,7 @@ svg {
     }
 
     /**END OF WORK**/
-
-
-
     /**FOOTER **/
-
-
     .footer-email-p {
         font-family: var(--ff-f-b);
         font-size: 35px;
